@@ -4,3 +4,4 @@ class Order < ActiveRecord::Base
   has_many :movieproductorders
   has_many :movieproducts, :through => :movieproductorders
 end
+#do inclusion for status

@@ -5,20 +5,18 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/customer.rb" afterPath="$PROJECT_DIR$/app/models/customer.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/movie.rb" afterPath="$PROJECT_DIR$/app/models/movie.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/movieproduct.rb" afterPath="$PROJECT_DIR$/app/models/movieproduct.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/movieproductorder.rb" afterPath="$PROJECT_DIR$/app/models/movieproductorder.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/order.rb" afterPath="$PROJECT_DIR$/app/models/order.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/province.rb" afterPath="$PROJECT_DIR$/app/models/province.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="movie_ecomm_store.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="e23c0f6e-2159-4f32-9411-ee2e17761a6a" time="1383952188385" ignored="false" />
-    <file path="/province.rb" changelist="e23c0f6e-2159-4f32-9411-ee2e17761a6a" time="1383952361568" ignored="false" />
-    <file path="/customer.rb" changelist="e23c0f6e-2159-4f32-9411-ee2e17761a6a" time="1383952437141" ignored="false" />
-    <file path="/order.rb" changelist="e23c0f6e-2159-4f32-9411-ee2e17761a6a" time="1383952561693" ignored="false" />
+    <file path="/province.rb" changelist="e23c0f6e-2159-4f32-9411-ee2e17761a6a" time="1383955172731" ignored="false" />
+    <file path="/customer.rb" changelist="e23c0f6e-2159-4f32-9411-ee2e17761a6a" time="1383954912821" ignored="false" />
+    <file path="/order.rb" changelist="e23c0f6e-2159-4f32-9411-ee2e17761a6a" time="1383955162929" ignored="false" />
     <file path="/movieproductorder.rb" changelist="e23c0f6e-2159-4f32-9411-ee2e17761a6a" time="1383952636380" ignored="false" />
-    <file path="/movieproduct.rb" changelist="e23c0f6e-2159-4f32-9411-ee2e17761a6a" time="1383953757346" ignored="false" />
-    <file path="/movie.rb" changelist="e23c0f6e-2159-4f32-9411-ee2e17761a6a" time="1383952753812" ignored="false" />
+    <file path="/movieproduct.rb" changelist="e23c0f6e-2159-4f32-9411-ee2e17761a6a" time="1383955184508" ignored="false" />
+    <file path="/movie.rb" changelist="e23c0f6e-2159-4f32-9411-ee2e17761a6a" time="1383955135474" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +39,7 @@
       <file leaf-file-name="movie.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/movie.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
+            <state line="4" column="24" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -50,7 +48,7 @@
       <file leaf-file-name="customer.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/customer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0">
+            <state line="7" column="66" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -68,7 +66,7 @@
       <file leaf-file-name="order.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/order.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="51" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0">
+            <state line="6" column="24" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -77,7 +75,7 @@
       <file leaf-file-name="province.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/province.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
+            <state line="4" column="22" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -86,7 +84,7 @@
       <file leaf-file-name="movieproduct.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/movieproduct.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="94" selection-start="134" selection-end="134" vertical-scroll-proportion="0.018248174">
+            <state line="6" column="30" selection-start="272" selection-end="272" vertical-scroll-proportion="0.10948905">
               <folding />
             </state>
           </provider>
@@ -110,11 +108,11 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/province.rb" />
-        <option value="$PROJECT_DIR$/app/models/customer.rb" />
-        <option value="$PROJECT_DIR$/app/models/order.rb" />
         <option value="$PROJECT_DIR$/app/models/movieproductorder.rb" />
+        <option value="$PROJECT_DIR$/app/models/customer.rb" />
         <option value="$PROJECT_DIR$/app/models/movie.rb" />
+        <option value="$PROJECT_DIR$/app/models/order.rb" />
+        <option value="$PROJECT_DIR$/app/models/province.rb" />
         <option value="$PROJECT_DIR$/app/models/movieproduct.rb" />
       </list>
     </option>
@@ -476,14 +474,14 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/models/movie.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
+        <state line="4" column="24" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/customer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0">
+        <state line="7" column="66" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -497,21 +495,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/order.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="51" selection-start="211" selection-end="211" vertical-scroll-proportion="0.0">
+        <state line="6" column="24" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/province.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
+        <state line="4" column="22" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/movieproduct.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="94" selection-start="134" selection-end="134" vertical-scroll-proportion="0.018248174">
+        <state line="6" column="30" selection-start="272" selection-end="272" vertical-scroll-proportion="0.10948905">
           <folding />
         </state>
       </provider>

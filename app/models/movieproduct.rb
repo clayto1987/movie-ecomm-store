@@ -4,3 +4,4 @@ class Movieproduct < ActiveRecord::Base
   has_many :orders, :through => :movieproductorders
   belongs_to :movie
 end
+#do inclusion for product type
