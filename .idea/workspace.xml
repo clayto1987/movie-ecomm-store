@@ -5,18 +5,19 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/customer.rb" afterPath="$PROJECT_DIR$/app/models/customer.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/movie.rb" afterPath="$PROJECT_DIR$/app/models/movie.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/movieproduct.rb" afterPath="$PROJECT_DIR$/app/models/movieproduct.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/movieproductorder.rb" afterPath="$PROJECT_DIR$/app/models/movieproductorder.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/order.rb" afterPath="$PROJECT_DIR$/app/models/order.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/province.rb" afterPath="$PROJECT_DIR$/app/models/province.rb" />
     </list>
     <ignored path="movie_ecomm_store.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e23c0f6e-2159-4f32-9411-ee2e17761a6a" time="1383952188385" ignored="false" />
-    <file path="/province.rb" changelist="e23c0f6e-2159-4f32-9411-ee2e17761a6a" time="1383955172731" ignored="false" />
-    <file path="/customer.rb" changelist="e23c0f6e-2159-4f32-9411-ee2e17761a6a" time="1383954912821" ignored="false" />
-    <file path="/order.rb" changelist="e23c0f6e-2159-4f32-9411-ee2e17761a6a" time="1383955162929" ignored="false" />
-    <file path="/movieproductorder.rb" changelist="e23c0f6e-2159-4f32-9411-ee2e17761a6a" time="1383952636380" ignored="false" />
-    <file path="/movieproduct.rb" changelist="e23c0f6e-2159-4f32-9411-ee2e17761a6a" time="1383955184508" ignored="false" />
-    <file path="/movie.rb" changelist="e23c0f6e-2159-4f32-9411-ee2e17761a6a" time="1383955135474" ignored="false" />
+    <file path="/Dummy.txt" changelist="e23c0f6e-2159-4f32-9411-ee2e17761a6a" time="1384201233313" ignored="false" />
+    <file path="/province.rb" changelist="e23c0f6e-2159-4f32-9411-ee2e17761a6a" time="1384202536829" ignored="false" />
+    <file path="/customer.rb" changelist="e23c0f6e-2159-4f32-9411-ee2e17761a6a" time="1384203547837" ignored="false" />
+    <file path="/order.rb" changelist="e23c0f6e-2159-4f32-9411-ee2e17761a6a" time="1384203966131" ignored="false" />
+    <file path="/movieproductorder.rb" changelist="e23c0f6e-2159-4f32-9411-ee2e17761a6a" time="1384204243343" ignored="false" />
+    <file path="/movieproduct.rb" changelist="e23c0f6e-2159-4f32-9411-ee2e17761a6a" time="1384203374036" ignored="false" />
+    <file path="/movie.rb" changelist="e23c0f6e-2159-4f32-9411-ee2e17761a6a" time="1384202187538" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,37 +37,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="movieproduct.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/movieproduct.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="56" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="movie.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/movie.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="24" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="customer.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/customer.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="66" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="movieproductorder.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/movieproductorder.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="26" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="order.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/order.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="24" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
+            <state line="5" column="36" selection-start="156" selection-end="246" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -75,16 +58,34 @@
       <file leaf-file-name="province.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/province.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="22" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
+            <state line="2" column="0" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="movieproduct.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/movieproduct.rb">
+      <file leaf-file-name="customer.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/customer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="30" selection-start="272" selection-end="272" vertical-scroll-proportion="0.10948905">
+            <state line="15" column="3" selection-start="891" selection-end="891" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="order.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/order.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="3" selection-start="811" selection-end="811" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="movieproductorder.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/movieproductorder.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="41" selection-start="405" selection-end="405" vertical-scroll-proportion="0.16423358">
               <folding />
             </state>
           </provider>
@@ -108,12 +109,12 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/movieproductorder.rb" />
-        <option value="$PROJECT_DIR$/app/models/customer.rb" />
         <option value="$PROJECT_DIR$/app/models/movie.rb" />
-        <option value="$PROJECT_DIR$/app/models/order.rb" />
         <option value="$PROJECT_DIR$/app/models/province.rb" />
         <option value="$PROJECT_DIR$/app/models/movieproduct.rb" />
+        <option value="$PROJECT_DIR$/app/models/order.rb" />
+        <option value="$PROJECT_DIR$/app/models/customer.rb" />
+        <option value="$PROJECT_DIR$/app/models/movieproductorder.rb" />
       </list>
     </option>
   </component>
@@ -149,7 +150,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -202,16 +202,17 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="usage.statistics" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="recentsLimit" value="5" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RunManager" selected="Rails.Development: movie_ecomm_store">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -392,23 +393,23 @@
     <frame x="0" y="22" width="1680" height="947" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.249694" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25275397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -474,42 +475,42 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/models/movie.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="24" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/customer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="66" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/movieproductorder.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="26" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/order.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="24" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
+        <state line="5" column="36" selection-start="156" selection-end="246" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/province.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="22" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
+        <state line="2" column="0" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/customer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="3" selection-start="891" selection-end="891" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/order.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="3" selection-start="811" selection-end="811" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/movieproduct.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="30" selection-start="272" selection-end="272" vertical-scroll-proportion="0.10948905">
+        <state line="13" column="56" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/movieproductorder.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="41" selection-start="405" selection-end="405" vertical-scroll-proportion="0.16423358">
           <folding />
         </state>
       </provider>
