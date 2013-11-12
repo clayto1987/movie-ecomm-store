@@ -10,6 +10,6 @@ class Movieproduct < ActiveRecord::Base
   validates :price,        :presence => true,
                            :numericality => true
   validates :product_type, :presence => true,
-                           :inclusion => { :in => %w(blu-ray dvd poster), :message => "%{value} is not a valid product" }
+                           :inclusion => { :in => %w(Blu-Ray DVD Poster), :message => "%{value} is not a valid product" }
   validates :description, :length => { :maximum => 255 }
 end
