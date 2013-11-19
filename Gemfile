@@ -26,6 +26,7 @@ gem 'jquery-rails', '~> 2.3.0'
 gem 'activeadmin'
 gem 'sass-rails'
 gem 'meta_search',    '>= 1.1.0.pre'
+gem 'bootstrap-sass', '~> 3.0.2.0'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

@@ -10,6 +10,7 @@ ActiveAdmin.register Movieproduct do
       image_tag image.image_path, :size => '30x40'
     end
     column :product_type
+    column :category
     column :description
     column :price
     column :stock_quantity
