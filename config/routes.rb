@@ -1,6 +1,8 @@
 MovieEcommStore::Application.routes.draw do
   root :to => 'store#index', :as => 'home', :via => :get
   match '/products' => 'movieproducts#index', :as => 'all_movieproducts', :via => :get
+  match '/products/:id' => 'movieproducts#show', :as => 'movieproduct', :via => :get
+
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)

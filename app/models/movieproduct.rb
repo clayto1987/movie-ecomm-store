@@ -6,8 +6,8 @@ class Movieproduct < ActiveRecord::Base
   belongs_to :movie
   belongs_to :category
 
-  validates :movie_id, :stock_quantity, :presence => true,
-                                        :numericality => { :only_integer => true }
+  validates :movie_id, :stock_quantity, :category_id, :presence => true,
+                                                      :numericality => { :only_integer => true }
   validates :price,        :presence => true,
                            :numericality => true
   validates :description, :length => { :maximum => 255 }
