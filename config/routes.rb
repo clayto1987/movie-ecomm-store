@@ -1,6 +1,9 @@
 MovieEcommStore::Application.routes.draw do
+  root :to => 'store#index', :as => 'home', :via => :get
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
+
 
 
   # The priority is based upon order of creation:
