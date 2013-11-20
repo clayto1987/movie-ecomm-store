@@ -1,0 +1,19 @@
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="media">
+      <a class="pull-left" href="#">
+        <%= image_tag movieproduct.image_path, :size => '150x150', :alt => 'image', :class => 'media-object' %>
+      </a>
+      <div class="media-body">
+        <h3 class="media-heading">
+          <%= movieproduct.movie.title %>
+          <% if movieproduct.category %>
+              (<%= movieproduct.category.name %>)
+          <% end %>
+        </h3>
+        <h4 class="media-heading"><%= number_to_currency(movieproduct.price) %></h4>
+        <%= movieproduct.description %>
+      </div>
+    </div>
+  </div>
+</div>
