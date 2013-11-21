@@ -3,6 +3,7 @@
     <h1><%= @category.name %> Products</h1>
   </div>
   <%= render @category_movieproducts %>
+  <%= paginate @category_movieproducts %>
 <% else %>
   <div class="page-header">
     <h1>No products exist for this category at this time</h1>

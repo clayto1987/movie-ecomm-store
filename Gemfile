@@ -30,6 +30,7 @@ gem 'bootstrap-sass', '~> 3.0.2.0'
 gem 'paperclip', '~> 3.0'
 #gem 'country-select'
 #gem 'country_select'
+gem 'kaminari'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
