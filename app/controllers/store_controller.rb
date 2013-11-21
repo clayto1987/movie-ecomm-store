@@ -7,4 +7,8 @@ class StoreController < ApplicationController
 
   def contact
   end
+
+  def search_results
+    #@movieproducts
+  end
 end
