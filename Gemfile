@@ -28,7 +28,7 @@ gem 'sass-rails'
 gem 'meta_search',    '>= 1.1.0.pre'
 gem 'bootstrap-sass', '~> 3.0.2.0'
 gem 'paperclip', '~> 3.0'
-#gem 'country-select'
+gem 'country-select', '~>1.1.1'
 #gem 'country_select'
 gem 'kaminari'
 
