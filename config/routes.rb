@@ -2,6 +2,7 @@ MovieEcommStore::Application.routes.draw do
   root :to => 'store#index', :as => 'home', :via => :get
   match '/products' => 'movieproducts#index', :as => 'all_movieproducts', :via => :get
   match '/products/new-releases' => 'movieproducts#newest_products', :as => 'new_products', :via => :get
+  match '/products/updated-products' => 'movieproducts#updated_products', :as => 'updated_products', :via => :get
   match '/products/:id' => 'movieproducts#show', :as => 'movieproduct', :via => :get
 
 

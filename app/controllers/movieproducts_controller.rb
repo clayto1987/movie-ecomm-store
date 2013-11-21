@@ -10,6 +10,9 @@ class MovieproductsController < ApplicationController
   def newest_products
     current_year = Time.now.year
     @newproducts = Movieproduct.joins(:movie).where(:movies => {:year => current_year})
-    #@newproducts = Movie.where(:year => current_year).joins(:movieproducts)
+  end
+
+  def updated_products
+    @updatedproducts = Movieproduct.order(:updated_at).limit(15)
   end
 end
