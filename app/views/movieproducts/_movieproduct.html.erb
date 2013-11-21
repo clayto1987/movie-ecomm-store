@@ -2,7 +2,7 @@
   <div class="panel-body">
     <div class="media">
       <% if movieproduct.image_path %>
-          <%= link_to (image_tag movieproduct.image_path, :size => '150x150', :alt => 'image', :class => 'media-object'), movieproduct, :class => 'pull-left' %>
+          <%= link_to (image_tag movieproduct.image_path, :width => '150', :alt => 'image', :class => 'media-object'), movieproduct, :class => 'pull-left' %>
       <% end %>
       <div class="media-body">
         <h3 class="media-heading">
