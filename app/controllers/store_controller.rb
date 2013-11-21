@@ -9,6 +9,7 @@ class StoreController < ApplicationController
   end
 
   def search_results
-    @movieproduct_results = Movieproduct.joins(:movie).where("movies.title LIKE ?", "%#{params[:keywords]}%")
+    keywords = params[:keywords]
+    @movieproduct_results = Movieproduct.joins(:movie).where(["movies.title LIKE ? OR movieproducts.description LIKE ?", "%#{keywords}%", "%#{keywords}%"]).order('movies.title').page(params[:page]).per(15)
   end
 end
