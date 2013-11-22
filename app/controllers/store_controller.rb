@@ -2,13 +2,17 @@ class StoreController < ApplicationController
   def index
   end
 
-  def about
-  end
-
-  def contact
+  def static_page
+    if params.has_key?(:id) && params.has_key?(:permalink)
+      page_id = params[:id]
+      @page_content = Page.find(page_id)
+    else
+      redirect_to root_path
+    end
   end
 
   def search_results
+    if params.has_key?(:keywords) && params.has_key?(:category)
       keywords = params[:keywords]
       product_category = params[:category]
 
@@ -18,5 +22,8 @@ class StoreController < ApplicationController
       else
         @movieproduct_results = Movieproduct.joins(:movie).where("movieproducts.category_id = #{product_category}").where(["movies.title LIKE ? OR movieproducts.description LIKE ?", "%#{keywords}%", "%#{keywords}%"]).order('movies.title').page(params[:page]).per(15)
       end
+    else
+      redirect_to root_path
+    end
   end
 end

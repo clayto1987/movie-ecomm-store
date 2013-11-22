@@ -3,9 +3,11 @@ MovieEcommStore::Application.routes.draw do
   match '/products' => 'movieproducts#index', :as => 'all_movieproducts', :via => :get
   match '/products/new-releases' => 'movieproducts#newest_products', :as => 'new_products', :via => :get
   match '/products/updated-products' => 'movieproducts#updated_products', :as => 'updated_products', :via => :get
+  ###match '/products/search-results' => 'store#search_results', :as => 'search_results', :via => :post
+  match '/products/search-results' => 'store#search_results', :as => 'search_results', :via => :get
   match '/products/:id' => 'movieproducts#show', :as => 'movieproduct', :via => :get
   match '/category/:name/products' => 'categories#index', :as => 'products_for_category', :via => :get
-  match '/search-results' => 'store#search_results', :as => 'search_results', :via => :post
+  match '/company/:id/:permalink' => 'store#static_page', :as => 'static_page', :via => :get
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
