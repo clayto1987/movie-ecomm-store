@@ -5,7 +5,7 @@ MovieEcommStore::Application.routes.draw do
   match '/products/updated-products' => 'movieproducts#updated_products', :as => 'updated_products', :via => :get
   match '/products/:id' => 'movieproducts#show', :as => 'movieproduct', :via => :get
   match '/category/:name/products' => 'categories#index', :as => 'products_for_category', :via => :get
-  match '/search-results' => 'store#search_results', :as => 'search_results', :via => :post
+  match '/search-results' => 'store#search_results', :as => 'search_results', :via => :get
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
