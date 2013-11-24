@@ -11,5 +11,5 @@ class Order < ActiveRecord::Base
   validates :customer_id, :presence => true,
                           :numericality => { :only_integer => true }
   validates :status,      :presence => true,
-                          :inclusion => { :in => %w(new processed shipped delivered returned error), :message => "%{value} is not a valid status" }
+                          :inclusion => { :in => %w(new processed shipped delivered completed returned error), :message => "%{value} is not a valid status" }
 end

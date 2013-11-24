@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   before_filter :load_pages
 
   protected
-    def load_pages
-      @pages = Page.order(:title)
-    end
+  def load_pages
+    @pages = Page.order(:title)
+  end
 end
