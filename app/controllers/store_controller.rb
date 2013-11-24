@@ -1,5 +1,7 @@
 class StoreController < ApplicationController
   def index
+    @random_products = Movieproduct.three_random_products
+    @newest_products = Movieproduct.order('created_at DESC').limit(3)
   end
 
   def static_page

@@ -11,4 +11,8 @@ class Movieproduct < ActiveRecord::Base
   validates :price,        :presence => true,
                            :numericality => true
   validates :description, :length => { :maximum => 255 }
+
+  def self.three_random_products
+    Movieproduct.limit(3).offset(rand(Movieproduct.count-4))
+  end
 end

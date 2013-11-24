@@ -3,6 +3,75 @@ $footer-border: #EEE;
 body {
   padding-top: 70px;
 
+  .marketing {
+    box-sizing: border-box;
+
+    .col-lg-4 {
+      text-align: center;
+      margin-bottom: 20px;
+
+      img {
+        width: 150px;
+        height: 200px;
+      }
+
+      .description {
+        height: 100px;
+      }
+    }
+
+    .col-md-7 {
+      width: 58.333333333333336%;
+      float: left;
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+
+      .featurette-heading {
+        font-weight: normal;
+        margin-top: 150px;
+        font-size: 50px;
+        line-height: 1;
+        letter-spacing: -1px;
+
+        .text-muted {
+          color: #999999;
+        }
+      }
+
+      .lead {
+        font-size: 21px;
+        margin-bottom: 20px;
+        font-weight: 200;
+        line-height: 1.4;
+      }
+
+    }
+
+    .col-md-5 {
+      width: 41.66666666666667%;
+      float: left;
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+
+      .img-responsive {
+        display: block;
+        height: auto;
+        max-width: 100%;
+        vertical-align: middle;
+      }
+    }
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+  }
+
+
+
   footer {
     border-top: 1px solid $footer-border;
     margin-top: 40px;
@@ -10,3 +79,9 @@ body {
     padding-bottom: 30px;
   }
 }
+
+.row::after, .container::after {
+  clear: both;
+}
+
+/* .container { width: 1170px; margin-right: auto; margin-left: auto; } */

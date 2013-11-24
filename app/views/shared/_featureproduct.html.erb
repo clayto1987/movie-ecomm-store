@@ -1,0 +1,6 @@
+<div class="col-lg-4">
+  <%= image_tag featuredproduct.image_path, :class => 'img-thumbnail', :alt => 'Featured Product' %>
+  <h2><%= featuredproduct.movie.title %></h2>
+  <p class="description"><%= featuredproduct.description%></p>
+  <p><%= link_to "View Details", movieproduct_path(featuredproduct.id), :class => 'btn btn-default' %></p>
+</div>
