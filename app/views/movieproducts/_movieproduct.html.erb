@@ -10,6 +10,8 @@
         </h3>
         <h4 class="media-heading"><%= number_to_currency(movieproduct.price) %></h4>
         <%= movieproduct.description %>
+        <br/>
+        <p class="cartbutton"><%= link_to "Add to Cart", root_path, :class => 'btn btn-primary' %></p>
       </div>
     </div>
   </div>

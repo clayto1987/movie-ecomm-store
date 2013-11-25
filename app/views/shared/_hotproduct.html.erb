@@ -3,6 +3,7 @@
       <div class="col-md-7">
         <h2 class="featurette-heading"><%= hotproduct.movie.title %><span class="text-muted"><%= hotproduct.created_at.strftime('%b %d, %Y') %></span></h2>
         <p class="lead"><%= hotproduct.description %></p>
+        <p><%= link_to "View Details", movieproduct_path(hotproduct.id), :class => 'btn btn-default' %></p>
       </div>
       <div class="col-md-5">
         <%= image_tag hotproduct.image_path, :class => 'featurette-image img-responsive', :width => '500', :alt => 'Popular New Product' %>
@@ -18,6 +19,7 @@
       <div class="col-md-7">
         <h2 class="featurette-heading"><%= hotproduct.movie.title %><span class="text-muted"><%= hotproduct.created_at.strftime('%b %d, %Y') %></span></h2>
         <p class="lead"><%= hotproduct.description %></p>
+        <p><%= link_to "View Details", movieproduct_path(hotproduct.id), :class => 'btn btn-default' %></p>
       </div>
     </div>
 

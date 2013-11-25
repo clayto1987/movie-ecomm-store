@@ -1,7 +1,7 @@
 @import "bootstrap";
 $footer-border: #EEE;
 body {
-  padding-top: 70px;
+  padding-top: 80px;
 
   .marketing {
     box-sizing: border-box;
@@ -74,6 +74,10 @@ body {
     .featurette-divider:last-of-type {
       display: none;
     }
+  }
+
+  .cartbutton {
+    margin: 15px 0;
   }
 
 
