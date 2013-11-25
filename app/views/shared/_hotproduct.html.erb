@@ -1,0 +1,25 @@
+<% if hotproduct_counter % 2 != 0 %>
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading"><%= hotproduct.movie.title %><span class="text-muted"><%= hotproduct.created_at.strftime('%b %d, %Y') %></span></h2>
+        <p class="lead"><%= hotproduct.description %></p>
+      </div>
+      <div class="col-md-5">
+        <%= image_tag hotproduct.image_path, :class => 'featurette-image img-responsive', :width => '500', :alt => 'Popular New Product' %>
+      </div>
+    </div>
+
+    <hr class="featurette-divider"/>
+<% else %>
+    <div class="row featurette">
+      <div class="col-md-5">
+        <%= image_tag hotproduct.image_path, :class => 'featurette-image img-responsive', :width => '500', :alt => 'Popular New Product' %>
+      </div>
+      <div class="col-md-7">
+        <h2 class="featurette-heading"><%= hotproduct.movie.title %><span class="text-muted"><%= hotproduct.created_at.strftime('%b %d, %Y') %></span></h2>
+        <p class="lead"><%= hotproduct.description %></p>
+      </div>
+    </div>
+
+    <hr class="featurette-divider"/>
+<% end %>
