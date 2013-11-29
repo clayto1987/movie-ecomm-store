@@ -23,7 +23,7 @@
               </td>
               <td><%= "#{movieproduct.movie.title} (#{movieproduct.category.name})" %></td>
               <td class="text-center">1</td>
-              <td class="text-right"><%= number_to_currency(movieproduct.price) %>&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to "Remove", remove_from_cart_path(movieproduct.id, :original_page => 'view_cart'), :method => :post %></td>
+              <td class="text-right"><%= number_to_currency(movieproduct.price) %>&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to "Remove", remove_from_cart_path(movieproduct.id), :method => :post %></td>
             </tr>
         <% end %>
     </tbody>
@@ -36,7 +36,7 @@
         </tr>
     </tfoot>
   </table>
-  <p class="cartbutton text-right"><%= link_to "Checkout", checkout_start_path, :class => 'btn btn-primary btn-lg' %></p>
+  <p class="cartbutton text-right"><%= link_to "Checkout", checkout_path, :class => 'btn btn-primary btn-lg' %></p>
 <% end %>
 <footer>
   <p class="pull-right"><a href="#">Back to top</a></p>

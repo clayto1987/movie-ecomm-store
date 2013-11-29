@@ -37,9 +37,8 @@ class StoreController < ApplicationController
 
   def remove_from_cart
     id = params[:id].to_i
-    redirection_page = params[:original_page]
     session[:shopping_cart].delete(id)
-    redirect_to :action => redirection_page
+    redirect_to :action => :view_cart
   end
 
   def reset_cart
@@ -48,14 +47,14 @@ class StoreController < ApplicationController
   end
 
   def view_cart
-
   end
 
-  def checkout_start
-
+  def checkout
+    @customer = Customer.new
+    @provinces = Province.order(:name)
   end
 
-  def checkout_finish
+  def place_order
     redirect_to :action => :index
   end
 end

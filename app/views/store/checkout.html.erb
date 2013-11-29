@@ -1,0 +1,46 @@
+<div class="page-header">
+  <h1>Checkout</h1>
+</div>
+<% if flash[:error] %>
+    <div class="alert alert-danger"><%= flash[:error] %></div>
+<% end %>
+<%= form_for @customer, :url => place_order_path(@customer) do |f| %>
+    <div class="form-group">
+        <%= f.label :first_name %>
+        <%= f.text_field :first_name, :class => 'form-control', :placeholder => 'First Name' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :last_name %>
+      <%= f.text_field :last_name, :class => 'form-control', :placeholder => 'Last Name' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :address %>
+      <%= f.text_field :address, :class => 'form-control', :placeholder => '11-111 Some St.' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :city %>
+      <%= f.text_field :city, :class => 'form-control', :placeholder => 'City' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :province_id %><br />
+      <%= f.collection_select :province_id, @provinces, :id, :name, {}, { :class => 'form-control' } %>
+    </div>
+    <div class="form-group">
+      <%= f.label :country %>
+      <%= f.text_field :country, :class => 'form-control', :placeholder => 'Country' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :postal_code %>
+      <%= f.text_field :postal_code, :class => 'form-control', :placeholder => 'A1A 1A1' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :email %>
+      <%= f.text_field :email, :class => 'form-control', :placeholder => 'email@example.com' %>
+    </div>
+    <hr/>
+    <p><%= f.submit 'Place Order', :class => 'btn btn-primary btn-lg' %></p>
+<% end %>
+<footer>
+  <p class="pull-right"><a href="#">Back to top</a></p>
+  <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+</footer>
