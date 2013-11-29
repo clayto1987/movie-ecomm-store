@@ -1,0 +1,44 @@
+<div class="page-header">
+  <h1>Your Cart</h1>
+</div>
+<% if session[:shopping_cart].empty? %>
+    <div class="alert alert-danger">You have no items in your shopping cart.</div>
+<% else %>
+  <table class="table">
+    <thead>
+        <tr>
+          <th></th>
+          <th>Product</th>
+          <th class="text-center">Quantity</th>
+          <th class="text-center">Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @cart_products.each do |movieproduct| %>
+            <tr>
+              <td>
+                <% if movieproduct.image_path %>
+                    <%= image_tag movieproduct.image_path, :width => '75', :alt => 'image', :class => 'media-object' %>
+                <% end %>
+              </td>
+              <td><%= "#{movieproduct.movie.title} (#{movieproduct.category.name})" %></td>
+              <td class="text-center">1</td>
+              <td class="text-right"><%= number_to_currency(movieproduct.price) %>&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to "Remove", remove_from_cart_path(movieproduct.id, :original_page => 'view_cart'), :method => :post %></td>
+            </tr>
+        <% end %>
+    </tbody>
+    <tfoot>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="text-right">Subtotal: <%= number_to_currency(@cart_products.map{|cp| cp.price}.inject(:+)) %></td>
+        </tr>
+    </tfoot>
+  </table>
+  <p class="cartbutton text-right"><%= link_to "Checkout", checkout_start_path, :class => 'btn btn-primary btn-lg' %></p>
+<% end %>
+<footer>
+  <p class="pull-right"><a href="#">Back to top</a></p>
+  <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+</footer>

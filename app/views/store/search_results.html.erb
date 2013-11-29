@@ -2,7 +2,7 @@
   <h1>Search Results</h1>
 </div>
 <% if @movieproduct_results.empty? %>
-    <p>Sorry, your search for '<%= params[:keywords] %>' returned no results.</p>
+    <div class="alert alert-danger">Sorry, your search for '<%= params[:keywords] %>' returned no results.</div>
 <% end %>
 <%= render @movieproduct_results %>
 <%= paginate @movieproduct_results %>

@@ -10,7 +10,10 @@ MovieEcommStore::Application.routes.draw do
   match '/store/add-to-cart/:id' => 'store#add_to_cart', :as => 'add_to_cart', :via => :post
   match '/store/remove-from-cart/:id' => 'store#remove_from_cart', :as => 'remove_from_cart', :via => :post
   match '/store/reset-cart' => 'store#reset_cart', :as => 'reset_cart', :via => :post
+  match '/store/cart' => 'store#view_cart', :as => 'view_cart', :via => :get
   match '/store/:id/:permalink' => 'store#static_page', :as => 'static_page', :via => :get
+  match '/store/checkout' => 'store#checkout_start', :as => 'checkout_start', :via => :get
+  match '/store/checkout' => 'store#checkout_finish', :as => 'checkout_finish', :via => :post
 
 
   devise_for :admin_users, ActiveAdmin::Devise.config
