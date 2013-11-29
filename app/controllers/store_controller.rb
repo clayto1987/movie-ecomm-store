@@ -28,4 +28,21 @@ class StoreController < ApplicationController
       redirect_to root_path
     end
   end
+
+  def add_to_cart
+    id = params[:id].to_i
+    session[:shopping_cart] << id unless session[:shopping_cart].include?(id)
+    redirect_to :action => :index
+  end
+
+  def remove_from_cart
+    id = params[:id].to_i
+    session[:shopping_cart].delete(id)
+    redirect_to :action => :index
+  end
+
+  def reset_cart
+    session[:shopping_cart] = nil
+    redirect_to :action => :index
+  end
 end

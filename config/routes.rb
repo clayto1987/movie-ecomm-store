@@ -7,7 +7,11 @@ MovieEcommStore::Application.routes.draw do
   match '/products/search-results' => 'store#search_results', :as => 'search_results', :via => :get
   match '/products/:id' => 'movieproducts#show', :as => 'movieproduct', :via => :get
   match '/category/:name/products' => 'categories#index', :as => 'products_for_category', :via => :get
-  match '/company/:id/:permalink' => 'store#static_page', :as => 'static_page', :via => :get
+  match '/store/add-to-cart/:id' => 'store#add_to_cart', :as => 'add_to_cart', :via => :post
+  match '/store/remove-from-cart/:id' => 'store#remove_from_cart', :as => 'remove_from_cart', :via => :post
+  match '/store/reset-cart' => 'store#reset_cart', :as => 'reset_cart', :via => :post
+  match '/store/:id/:permalink' => 'store#static_page', :as => 'static_page', :via => :get
+
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
