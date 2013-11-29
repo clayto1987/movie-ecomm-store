@@ -40,7 +40,7 @@
         </tbody>
       </table>
     </div>
-    <p class="cartbutton"><%= link_to "Add to Cart", root_path, :class => 'btn btn-primary' %></p>
+    <%= render :partial => 'shared/cartbutton', :locals => {:movieproduct => @movieproduct} %>
   </div>
 </div>
 <footer>
