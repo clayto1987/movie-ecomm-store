@@ -27,7 +27,7 @@
     </div>
     <div class="form-group">
       <%= f.label :country %>
-      <%= f.text_field :country, :class => 'form-control', :placeholder => 'Country' %>
+      <%= f.country_select 'country', ['Canada', 'United States'], {}, {:class => 'form-control'} %>
     </div>
     <div class="form-group">
       <%= f.label :postal_code %>
@@ -38,7 +38,9 @@
       <%= f.text_field :email, :class => 'form-control', :placeholder => 'email@example.com' %>
     </div>
     <hr/>
-    <p><%= f.submit 'Place Order', :class => 'btn btn-primary btn-lg' %></p>
+    <p>
+        <%= f.submit 'Place Order', :class => 'btn btn-primary btn-lg' %>&nbsp;&nbsp;&nbsp;<%= link_to "Continue Shopping", root_path, :class => 'btn btn-primary btn-lg' %>
+    </p>
 <% end %>
 <footer>
   <p class="pull-right"><a href="#">Back to top</a></p>
