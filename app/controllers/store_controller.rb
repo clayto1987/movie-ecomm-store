@@ -57,44 +57,56 @@ class StoreController < ApplicationController
   end
 
   def place_order
-    error_msg = 'A database error occurred and your order was not submitted, please try again.'
+    #order_total = 0.0
+    #error_msg = 'A database error occurred and your order was not submitted, please try again.'
 
-    customer = Customer.create(params[:customer])
-    order = customer.orders.build
+    @customer = Customer.new(params[:customer])
+    @order = @customer.orders.build
 
-    order.gst_rate = customer.province.gst
-    order.pst_rate = customer.province.pst
-    order.hst_rate = customer.province.hst
-    order.status = 'new'
+    @order.gst_rate = @customer.province.gst
+    #gst = @customer.province.gst
+    @order.pst_rate = @customer.province.pst
+    #pst = @customer.province.pst
+    @order.hst_rate = @customer.province.hst
+    #hst = @customer.province.hst
+    @order.status = 'new'
 
-    order.save
+    @order.save
 
-    if order.errors.any?
-      flash.now[:error] = error_msg
-      render :action => :checkout
-    end
+    #if @order.errors.any?
+    #  flash.now[:error] = error_msg
+    #  render :action => :checkout
+    #end
 
     session[:shopping_cart].each do |id|
       movie_product = Movieproduct.find(id)
 
-      movie_product_order = order.movieproductorders.build
+      movie_product_order = @order.movieproductorders.build
       movie_product_order.movieproduct = movie_product
       movie_product_order.price = movie_product.price
       movie_product_order.quantity = movie_product.stock_quantity
+
+      #order_total += movie_product_order.price
 
       movie_product.stock_quantity -= 1
 
       movie_product.save
       movie_product_order.save
 
-      if movie_product.errors.any? || movie_product_order.errors.any?
-        flash.now[:error] = error_msg
-        render :action => :checkout
-      end
+      #if movie_product.errors.any? || movie_product_order.errors.any?
+      #  flash.now[:error] = error_msg
+      #  render :action => :checkout
+      #end
     end
 
+    #order_total += (order_total * pst) + (order_total * gst) + (order_total * hst)
+
     session[:shopping_cart] = nil
-    flash[:completed_order] = 'Thank You for your order, it is being processed and will be shipped very soon'
+    flash[:completed_order] = "Thank You for your order, it is being processed and will be shipped very soon"
     redirect_to :action => :index
+  end
+
+  def test
+    @customer = Customer.new(params[:customer])
   end
 end

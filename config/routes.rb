@@ -12,7 +12,7 @@ MovieEcommStore::Application.routes.draw do
   match '/store/reset-cart' => 'store#reset_cart', :as => 'reset_cart', :via => :post
   match '/store/cart' => 'store#view_cart', :as => 'view_cart', :via => :get
   match '/store/checkout' => 'store#checkout', :as => 'checkout', :via => :get
-  match '/store/checkout' => 'store#place_order', :as => 'place_order', :via => :post
+  match '/store' => 'store#place_order', :as => 'place_order', :via => :post
   match '/store/:id/:permalink' => 'store#static_page', :as => 'static_page', :via => :get
 
 
