@@ -4,6 +4,11 @@
 <% if session[:shopping_cart].empty? %>
     <div class="alert alert-danger">You have no items in your shopping cart.</div>
 <% else %>
+  <% if flash[:product_added] %>
+    <div class="alert alert-success"><%= flash[:product_added] %></div>
+  <% elsif flash[:product_removed] %>
+    <div class="alert alert-danger"><%= flash[:product_removed] %></div>
+  <% end %>
   <table class="table">
     <thead>
         <tr>

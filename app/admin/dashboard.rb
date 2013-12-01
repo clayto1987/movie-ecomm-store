@@ -12,7 +12,7 @@ ActiveAdmin.register_page "Dashboard" do
 
     #section "Customer Orders" do
     panel "Outstanding Orders" do
-      table_for Order.where("status <> 'completed'") do
+      table_for Order.where("status <> 'completed'").order('created_at DESC') do
         column 'Customer' do |order|
           link_to order.customer.first_name + " " + order.customer.last_name, admin_customer_path(order.customer)
         end
@@ -20,6 +20,7 @@ ActiveAdmin.register_page "Dashboard" do
           link_to order.id, admin_order_path(order)
         end
         column :status
+        column :created_at
       end
     end
 

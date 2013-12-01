@@ -32,12 +32,14 @@ class StoreController < ApplicationController
   def add_to_cart
     id = params[:id].to_i
     session[:shopping_cart] << id unless session[:shopping_cart].include?(id)
+    flash[:product_added] = '1 Movie Product added to your Cart'
     redirect_to :action => :view_cart
   end
 
   def remove_from_cart
     id = params[:id].to_i
     session[:shopping_cart].delete(id)
+    flash[:product_removed] = '1 Movie Product removed from your Cart'
     redirect_to :action => :view_cart
   end
 
@@ -55,6 +57,44 @@ class StoreController < ApplicationController
   end
 
   def place_order
+    error_msg = 'A database error occurred and your order was not submitted, please try again.'
+
+    customer = Customer.create(params[:customer])
+    order = customer.orders.build
+
+    order.gst_rate = customer.province.gst
+    order.pst_rate = customer.province.pst
+    order.hst_rate = customer.province.hst
+    order.status = 'new'
+
+    order.save
+
+    if order.errors.any?
+      flash.now[:error] = error_msg
+      render :action => :checkout
+    end
+
+    session[:shopping_cart].each do |id|
+      movie_product = Movieproduct.find(id)
+
+      movie_product_order = order.movieproductorders.build
+      movie_product_order.movieproduct = movie_product
+      movie_product_order.price = movie_product.price
+      movie_product_order.quantity = movie_product.stock_quantity
+
+      movie_product.stock_quantity -= 1
+
+      movie_product.save
+      movie_product_order.save
+
+      if movie_product.errors.any? || movie_product_order.errors.any?
+        flash.now[:error] = error_msg
+        render :action => :checkout
+      end
+    end
+
+    session[:shopping_cart] = nil
+    flash[:completed_order] = 'Thank You for your order, it is being processed and will be shipped very soon'
     redirect_to :action => :index
   end
 end

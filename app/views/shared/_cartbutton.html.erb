@@ -1,5 +1,9 @@
-<% if session[:shopping_cart].include?(movieproduct.id) %>
-    <p class="cartbutton"><%= link_to "Remove from Cart", remove_from_cart_path(movieproduct.id), :method => :post, :class => 'btn btn-primary' %></p>
+<% if movieproduct.stock_quantity > 0 %>
+    <% if session[:shopping_cart].include?(movieproduct.id) %>
+        <p class="cartbutton"><%= link_to "Remove from Cart", remove_from_cart_path(movieproduct.id), :method => :post, :class => 'btn btn-primary' %></p>
+    <% else %>
+        <p class="cartbutton"><%= link_to "Add to Cart", add_to_cart_path(movieproduct.id), :method => :post, :class => 'btn btn-primary' %></p>
+    <% end %>
 <% else %>
-    <p class="cartbutton"><%= link_to "Add to Cart", add_to_cart_path(movieproduct.id), :method => :post, :class => 'btn btn-primary' %></p>
+    <p class="cartbutton"><button type="button" class="btn btn-primary" disabled="disabled">Add to Cart</button></p>
 <% end %>

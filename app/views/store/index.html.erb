@@ -1,4 +1,6 @@
-<p><%= debug session %></p>
+<% if flash[:completed_order] %>
+    <p class="alert alert-success"><%= flash[:completed_order] %></p>
+<% end %>
 <div class="jumbotron">
   <h1>Welcome to</h1>
   <h1>Take-One Movie Goods Co.</h1>
