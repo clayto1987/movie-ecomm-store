@@ -61,6 +61,8 @@ class StoreController < ApplicationController
     #error_msg = 'A database error occurred and your order was not submitted, please try again.'
 
     @customer = Customer.new(params[:customer])
+    @customer.save
+
     @order = @customer.orders.build
 
     @order.gst_rate = @customer.province.gst
